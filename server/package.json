@@ -4,7 +4,7 @@
   "description": "an express server of the tab-tracker application",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/app.js --exec 'npm run eslint'",
+    "start": "nodemon src/app.js",
     "lint": "eslint **/*.js"
   },
   "author": "",
@@ -12,6 +12,7 @@
   "devDependencies": {
     "eslint": "^7.31.0",
     "eslint-plugin-vue": "^7.14.0",
+    "express": "^4.17.1",
     "nodemon": "^2.0.12"
   }
 }
