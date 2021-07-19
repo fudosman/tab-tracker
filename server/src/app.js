@@ -23,9 +23,9 @@ app.get('/status', function (req,res,next){
   next();
 });
 
-app.get('/welcome', function (req,res,next){
+app.post('/register', function (req,res,next){
   res.send({
-    welcome: "you're welcome to the welcome route!"
+    message: `Hello! ${req.body.email}! with the password ${req.body.password} is successfully registered!`
   });
   next();
 });
